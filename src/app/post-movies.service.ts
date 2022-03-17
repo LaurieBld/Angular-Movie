@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Genre, Movie } from './type';
-import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 

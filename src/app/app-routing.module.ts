@@ -12,7 +12,8 @@ const routes: Routes = [
     path:'', component: AllMoviesComponent
   },
   {
-    path:'details/:id', component: DetailsComponent
+    // ou au lieu de movies, mettre details
+    path:'movies/:id', component: DetailsComponent
   },
   {
     path:':genre', component: NavGenresComponent

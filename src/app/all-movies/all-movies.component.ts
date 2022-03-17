@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Genre, Movie } from '../type';
 import { PostMoviesService } from '../post-movies.service';
-import { RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 
 
