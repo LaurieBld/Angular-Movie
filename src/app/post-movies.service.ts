@@ -57,7 +57,7 @@ export class PostMoviesService {
     )
   }
 
-  postCommentaire(id: number, commentaire: string): Observable<Movie[]> {
-    return this.http.post<Movie[]>(`${this.serverUrl}${this.moviesPath}${id}/comments`, commentaire)
+  postCommentaire(id: number, commentaire: Partial<Comment>): Observable<Comment> {
+    return this.http.post<Comment>(`${this.serverUrl}${this.moviesPath}${id}/comments`, commentaire)
   }
 }

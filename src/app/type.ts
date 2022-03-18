@@ -16,9 +16,19 @@ export class Movie {
     vote_count!: number;
     backdrop_path!: string;  
     genres!: Genre[];
+    comments!: Comment[];
   }
 
   export class Genre {
       id!: number;
       name!: string;
   }
+
+
+export class Comment{​​​
+id!: number;
+movie_id!: number;
+text!: string;
+rating!: number;
+date!: string;
+}​​​

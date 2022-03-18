@@ -19,8 +19,19 @@
         <p> {{ movie.overview }} </p>
         <a class="nav-link" routerLinkActive="active" routerLink="/">Retour accueil</a>
       </div>
+      <form [formGroup]="loloForm" (ngSubmit)="addComment()">
+        <input type="text" formControlName="text">
+        <input type="number" formControlName="rating" min=1 max=10>
+        <button type="envoi">Ajouter votre commentaire</button>
+      </form>
     </div>
+    <ul class="comments">
+      <li *ngFor="let comment of movie.comments"> 
+        <p>{{ comment.text }}</p>
+      </li> 
+    </ul>
 </div>
-</div>   
+
+
 
           
