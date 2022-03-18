@@ -13,13 +13,12 @@ export class AppComponent {
 
   // on initialise l'attibut movies //
   movies: Movie[] = [];
+  
 
 
   constructor(private PostMoviesService: PostMoviesService) {}
 
   ngOnInit(): void {
   // this.movies = this.PostMoviesService.getAllMovies;
+    }
 }
-}
-
-

@@ -19,6 +19,7 @@ export class NavGenresComponent implements OnInit {
     this.PostMoviesService.getAllGenres()
     .subscribe(genres => { 
       this.genres = genres;   
+      console.log(this.genres)
   });
 }
 }

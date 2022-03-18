@@ -1,28 +1,26 @@
-<div id="center" class="main center">
-
+<div id="center" class="card-wrapper">
   <div class="container">
     <div class="row" *ngIf="movie">
       <div>
         <img [src]="movie.poster_path" [alt]="movie.title" />  
       </div>
-      <div class="col-xs-12 col-sm-8">
+      <div class="col-xs-12 col-sm-8" id="title">
         <h2>{{ movie.title }}</h2>
-       <!--<h3>{{ movie.tagline }}</h3>-->
+        <!--<h3>{{ movie.tagline }}</h3>-->
         <p class="meta-wrap">
-          <!--<span class="rating">Rating: {{ movie.vote_average }} - </span>-->
-          <!--<span class="meta" > {{ movie.spoken_languages[0].name }} / {{ movie.runtime }} min. / {{ movie.release_date | date:'YYYY' }}</span>-->
+        <span class="rating" style="color: red;">Note: {{ movie.vote_average }} sur 10 </span>
+        <span class="meta" > Sorti en {{ movie.release_date | date:'YYYY' }}</span>
         </p>
-
         <ul class="genres">
           <li *ngFor="let genre of movie.genres"> 
             <p>{{ genre.name }}</p>
           </li>
         </ul>
-        <!--<a routerLink="/">Retour à l&apos;accueil</a>-->
+        <p> {{ movie.overview }} </p>
+        <a class="nav-link" routerLinkActive="active" routerLink="/">Retour accueil</a>
       </div>
     </div>
-  </div>
 </div>
-      
+</div>   
 
           
