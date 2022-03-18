@@ -27,7 +27,7 @@
     </div>
     <ul class="comments">
       <li *ngFor="let comment of movie.comments"> 
-        <p>{{ comment.text }}</p>
+        <p>{{ comment.text }} {{ comment.rating }} / 10</p>
       </li> 
     </ul>
 </div>

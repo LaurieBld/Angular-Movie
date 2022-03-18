@@ -38,6 +38,4 @@ export class AllMoviesComponent implements OnInit {
         this.movies = movies;
       });
     }
-
-    
   }
